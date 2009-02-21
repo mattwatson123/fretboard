@@ -45,6 +45,9 @@ require 'optparse'
 require 'timeout'
 require 'pp'
 
+#
+# TODO: add --no-color option
+#
 require 'rubygems'
 require 'term/ansicolor'
 include Term::ANSIColor
