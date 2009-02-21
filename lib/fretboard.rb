@@ -45,9 +45,6 @@ require 'optparse'
 require 'timeout'
 require 'pp'
 
-#
-# TODO: add --no-color option
-#
 require 'rubygems'
 require 'term/ansicolor'
 include Term::ANSIColor
@@ -56,7 +53,7 @@ include Term::ANSIColor
 class Fretboard
   FRETS = 12
   STRINGS = 6
-  VERSION = '0.0.5'
+  VERSION = '0.0.6'
 
   def self.display_version
     puts "#{File.basename(__FILE__)} version #{VERSION}"

@@ -34,8 +34,6 @@
 #   -d, --display [flat|sharp]    Show fretboard
 #   -l, --log LOGFILE             Log session score to LOGFILE
 #   -v, --version                 Show version
-#   -c, --[no-]color              Display ANSI color codes
-#   
 #
 # == Author
 #   Mark DeWandel mailto:mark.dewandel@gmail.com
