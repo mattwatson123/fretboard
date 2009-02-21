@@ -45,9 +45,23 @@ require 'optparse'
 require 'timeout'
 require 'pp'
 
-require 'rubygems'
-require 'term/ansicolor'
-include Term::ANSIColor
+begin
+  require 'rubygems'
+  require 'term/ansicolor'
+  include Term::ANSIColor
+rescue LoadError
+  def green(args)
+    args
+  end
+
+  def red(args)
+    args
+  end
+
+  def bold(args)
+    args
+  end
+end
 
 # Fretboard class for learning the guitar fretboard.
 class Fretboard
