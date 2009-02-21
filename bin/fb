@@ -1,0 +1,11 @@
+#!/usr/bin/ruby -w
+#
+# fb -- command line program providing drills for learning the guitar
+#       fretboard
+#
+
+require 'fretboard'
+
+opts = Fretboard::parse_args(ARGV)
+f = Fretboard.new(opts)
+f.run
