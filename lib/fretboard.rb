@@ -316,6 +316,5 @@ end
 
 if $0 == __FILE__
   opts = Fretboard::parse_args(ARGV)
-  f = Fretboard.new(opts)
-  f.run
+  Fretboard.new(opts).run
 end
