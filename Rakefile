@@ -15,7 +15,7 @@ gem_spec = Gem::Specification.new do |s|
   s.homepage = "http://msd.github.com"
   s.has_rdoc = true
   #s.test_files = FileList['tests/**/*'] 
-  s.version = '0.0.6' 
+  s.version = '0.0.7' 
   s.add_dependency("term-ansicolor")
 end 
 

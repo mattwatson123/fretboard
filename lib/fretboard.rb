@@ -67,7 +67,7 @@ end
 class Fretboard
   FRETS = 12
   STRINGS = 6
-  VERSION = '0.0.6'
+  VERSION = '0.0.7'
 
   def self.display_version
     puts "#{File.basename(__FILE__)} version #{VERSION}"
