@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{fretboard}
-  s.version = "0.0.8"
+  s.version = "0.0.9"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mark DeWandel"]
@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.default_executable = %q{fb}
   s.email = %q{mark.dewandel@gmail.com}
   s.executables = ["fb"]
-  s.files = ["lib/fretboard.rb", "bin/fb", "Rakefile", "README", "COPYING", "doc/files", "doc/files/README.html", "doc/files/lib", "doc/files/lib/fretboard_rb.html", "doc/files/lib/fretboard_rb.src", "doc/files/lib/fretboard_rb.src/M000001.html", "doc/files/lib/fretboard_rb.src/M000002.html", "doc/files/lib/fretboard_rb.src/M000003.html", "doc/fr_class_index.html", "doc/rdoc-style.css", "doc/classes", "doc/classes/Fretboard.html", "doc/classes/Fretboard.src", "doc/classes/Fretboard.src/M000004.html", "doc/classes/Fretboard.src/M000010.html", "doc/classes/Fretboard.src/M000008.html", "doc/classes/Fretboard.src/M000005.html", "doc/classes/Fretboard.src/M000006.html", "doc/classes/Fretboard.src/M000007.html", "doc/fr_method_index.html", "doc/created.rid", "doc/fr_file_index.html", "doc/index.html"]
+  s.files = ["lib/fretboard.rb", "bin/fb", "Rakefile", "README", "COPYING"]
   s.has_rdoc = true
   s.homepage = %q{http://msd.github.com}
   s.rdoc_options = ["--inline-source", "--charset=UTF-8"]
