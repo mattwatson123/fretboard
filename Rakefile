@@ -17,7 +17,7 @@ begin
     gem.has_rdoc = true
     # gem.test_files = FileList['tests/**/*'] 
     # gem.version = '0.0.7' 
-    gem.add_dependency("term-ansicolor")
+    #gem.add_dependency("term-ansicolor")
   end
 rescue LoadError
   puts "Jeweler, or one of its dependencies, is not available."
