@@ -32,6 +32,7 @@
 #                                 (default 1-6)
 #   -d, --display [flat|sharp]    Show fretboard
 #   -l, --log LOGFILE             Log session score to LOGFILE
+#   -c, -[no-]color               Specify ANSI color usage
 #   -v, --version                 Show version
 #
 # == Author
@@ -105,6 +106,10 @@ class Fretboard
         options[:logfile] = opt
       end
 
+      opts.on("-c", "--[no-]color", "Use ANSI escape sequences") do |opt|
+        options[:color] = opt
+      end
+
       opts.on("-v", "--version", "Show version") do
         display_version
         exit 0
@@ -122,6 +127,10 @@ class Fretboard
 
   def initialize(args)
     @timeout = args[:timeout] || 0
+
+    if args.has_key?(:color)
+      puts "color = #{args[:color]}"
+    end
 
     if args.has_key?(:fret)
       a = args[:fret]
@@ -163,6 +172,7 @@ class Fretboard
 
     scale_sharps = %w(A A# B C C# D D# E F F# G G#)
     scale_flats  = %w(A Bb B C Db D Eb E F Gb G Ab)
+    # scale_flats  = %w(A B♭ B C D♭ D E♭ E F G♭ G A♭)
     accidentals  = [1, 4, 6, 9, 11]
 
     # This is for the standard EADGBE tuning
