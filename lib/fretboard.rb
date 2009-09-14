@@ -47,7 +47,6 @@ require 'timeout'
 require 'pp'
 
 begin
-  require 'rubygems'
   require 'term/ansicolor'
   include Term::ANSIColor
 rescue LoadError
